@@ -10,8 +10,13 @@ Created on Mon Apr  7 17:30:34 2025
 Created on Mon Apr  7 17:30:24 2025
 
 @author: 28211
+
 """
-from Day_Stock_lookup import Day_StockData
+import tkinter as tk
+from tkinter import ttk
+from tkinter import messagebox
+from GUI_achieve import StockGUI
 if __name__ == "__main__":
-    stock = Day_StockData()
-    print(stock.get_dji_daily_data("2019-10-21"))
+    root = tk.Tk()
+    app = StockGUI(root)
+    root.mainloop()

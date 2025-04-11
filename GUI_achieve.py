@@ -159,7 +159,3 @@ class StockGUI:
         except Exception as e:
             messagebox.showerror("错误", f"绘图失败: {str(e)}")
 
-if __name__ == "__main__":
-    root = tk.Tk()
-    app = StockGUI(root)
-    root.mainloop()
